@@ -1,0 +1,10 @@
+version: "3"
+services:
+  ui:
+    build: ./task-ui
+    ports:
+      - 9000:9000
+  service:
+    build: ./task-service
+    ports:
+      - 8080:8080
